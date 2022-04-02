@@ -1,0 +1,65 @@
+.us {
+    margin-top: 30px;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+}
+
+#jumbo {
+    height: 600px;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0;
+    position: relative;
+}
+#jumbo::before {
+    content: "";
+      background-image: url(jumbotron.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.8;
+      /*
+    background-color: #556B2F; /* Used if the image is unavailable
+    background-image: url(jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    */
+}
+#about-container {
+    position: relative;
+    justify-content: center;
+    max-width: 70%;
+    background-color: #F5F5F5;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+}
+#search-button {
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 20px;
+    color: #556B2F;
+    border-color: #FFFFFF;
+    border-radius: 12px 12px 12px 12px;
+    position: relative;
+}
+
+#search-button:link:hover,
+#search-button:visited:hover {
+    background-color: #556B2F;
+    color: #FFFFFF;
+    border-color: #556B2F;
+}
+
+#profile-button {
+    background-color: #556B2F;
+    color: #FFFFFF;
+    border-color: #556B2F;
+    border-radius: 12px 12px 12px 12px;
+}
