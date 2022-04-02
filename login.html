@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="login.css">
+
+<head>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+
+<body style="background-color: #FFFFFF;">
+    <nav class="navbar navbar-expand-lg" style="height: 80px;">
+        <ul class="nav navbar-nav">
+            <li class="nav-item justify-content-center">
+                <a clas="nav-link" href="index.html"><img src="logo.jpg" alt="Logo" style="height: 60px; object-fit: cover;"></a>
+            </li>            
+        </ul>    
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+            <ul class="nav navbar-nav">
+                <li class="nav-item justify-content-end">
+                    <a class="nav-link" href="profile.html">
+                    </a>
+                </li>            
+            </ul>
+        </div>
+    </nav>
+    <div class=" flex-r container">
+        <div class="flex-r login-wrapper">
+          <div class="login-text">
+            <div class="logo">
+              <span><i class="fab fa-speakap"></i></span>
+              <span>Shop Sustainable</span>
+            </div>
+            <h1>Sign Up</h1>
+            <p>Shopping Made Sustainable!</p>
+    
+            <form class="flex-c">
+              <div class="input-box">
+                <span class="label">E-mail</span>
+                <div class=" flex-r input">
+                  <input type="text" placeholder="name@abc.com">
+                  <i class="fas fa-at"></i>
+                </div>
+              </div>
+    
+              <div class="input-box">
+                <span class="label">Password</span>
+                <div class="flex-r input">
+                  <input type="password" placeholder="8+ (a, A, 1, #)">
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+    
+    
+              <input class="btn" type="submit" value="Create an Account">
+              
+              <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 40,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+            </form>
+    
+          </div>
+        </div>
+      </div>
