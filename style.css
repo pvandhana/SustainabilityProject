@@ -109,3 +109,72 @@ body {
 .searchbar-open {
     width: 100%
 }
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  .circle{
+    border: 1px solid #556B2F;
+    box-shadow: inset 1px 1px 3px #556B2F;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #556B2F;
+}
+.circle:hover{
+    background: #556B2F;
+}
+.circle:active{
+    background: radial-gradient(#556B2F, #556B2F);
+}
+.circle:before,
+.circle:after{
+    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+}
+/* PLUS */
+.circle.plus:before,
+.circle.plus:after {
+    background:white;
+    box-shadow: 1px 1px 1px #556B2F;
+}
+.circle.plus:before{
+    width: 2px;
+    margin: 3px auto;
+}
+.circle.plus:after{
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: none;
+}
+/* MINUS */
+.circle.minus:before{
+    background: #cc0000;
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: 0px 1px 1px #ffffff9e;
+}
+/* CROSS */
+.circle.cross:after,
+.circle.cross:before{
+    background: #000;
+    margin: auto 4px;
+    height: 2px;
+    transform:rotateZ(45deg);
+    box-shadow: 0px 1px 1px #ffffff9e;
+}
+.circle.cross:after{
+    transform:rotateZ(-45deg);
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
