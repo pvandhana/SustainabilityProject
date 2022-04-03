@@ -178,3 +178,78 @@ div.sticky {
     position: sticky;
     top: 0;
   }
+
+.rating,
+.rating2,
+.rating3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.rating>input,
+.rating2>input,
+.rating3>input {
+    display: none
+}
+
+.rating>label,
+.rating2>label,
+.rating3>label {
+    position: relative;
+    width: 1em;
+    font-size: 32px;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before,
+.rating2>label::before,
+.rating3>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating2>label:hover:before,
+.rating3>label:hover:before,
+.rating>label:hover~label:before,
+.rating2>label:hover~label:before,
+.rating3>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before,
+.rating2>input:checked~label:before,
+.rating3>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before,
+.rating2:hover>input:checked~label:before,
+.rating3:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.vote {
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+  } 
+  
+  
+  .vote.on {
+    color: #f48024
+  }
+  .vote2 {
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+  } 
+  
+  
+  .vote2.on {
+    color: #f48024
+  }
+
