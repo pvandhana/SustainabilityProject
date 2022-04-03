@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
-<script src="form.js"></script>
+  <title>Post Review</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js"></script>
 </head>
-<body style="background-color: #FFFFFF;">
-        <nav class="navbar navbar-expand-lg" style="height: 100px;">
-            <ul class="nav navbar-nav">
-                <li class="nav-item justify-content-center">
-                    <a clas="nav-link" href="index.html"><img src="logo.jpg" alt="Logo"></a>
-                </li>            
-            </ul>    
-            <div class="collapse navbar-collapse justify-content-end" id="navbarToggle" style="margin-right: 15px;">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item justify-content-end">
-                        <a class="nav-link" href="profile.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" style="color: #556B2F;"/>
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" style="color: #556B2F;"/>
-                              </svg>
-                        </a>
-                    </li>            
-                </ul>
-            </div>
-        </nav>
-    <div style="padding-left: 10%; padding-right: 20%; padding-top: 2%;">
-        <form action="search.html" name="signupForm">
+<body style="background-color: #FAF9F6; font-family: 'Cabin', sans-serif;">
+  <nav class="navbar navbar-expand-lg" style="height: 80px;">
+    <ul class="nav navbar-nav">
+        <li class="nav-item justify-content-center">
+          <a clas="nav-link" href="index.html"><img src="logo.jpg" alt="Logo" style="height: 100px; object-fit: cover; margin-left: 20px;"></a>            </li>            
+    </ul>    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+        <ul class="nav navbar-nav">
+            <li class="nav-item justify-content-end">
+                <a class="nav-link" href="profile.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" style="color: #556B2F;"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" style="color: #556B2F;"/>
+                    </svg>
+                </a>
+            </li>            
+        </ul>
+    </div>
+  </nav>
+
+    <div style="padding-left: 10%; padding-right: 20%; padding-top: 2%; padding-bottom: 2%;">
+        <form action="search2.html" name="signupForm">
             <div class="form-group">
               <label for="exampleInputEmail1">Company Name</label>
               <input type="cName" class="form-control" id="exampleInputCName" aria-describedby="cNameHelp" placeholder="Enter company name">
             </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" style="padding-top: 3%;">Link to Website</label>
+              <input type="cName" class="form-control" id="exampleInputCName" aria-describedby="cNameHelp" placeholder="Enter company name">
+            </div>
+
+            <div class="dropdown" style="padding-top: 3%;">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" style="background-color: #556B2F; border-radius: 12px 12px 12px 12px;">
+                <span id="selected">Category</span><span class="caret"></span></a>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item">👕   Clothing</a></li>
+                <li><a class="dropdown-item">🛒   Groceries</a></li>
+                <li><a class="dropdown-item">📱   Technology</a></li>
+              </ul>
+            </div>
+
             <label style="padding-top: 3%;">Ethical Labor Rating</label>
             <div class="rating"> 
                 <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> 
@@ -69,8 +87,14 @@
                 <label for="exampleInputRER">Details on Renewable Energy Rating</label>
                 <input type="RER" class="form-control" id="exampleInputRER" placeholder="">
               </div>
-            <button type="submit" onclick="signup()" class="btn btn-primary" style="margin-top: 3%; background-color: #556B2F;">Submit</button>
+            <button type="submit" onclick="signup()" class="btn btn-primary" style="margin-top: 3%; background-color: #556B2F; border-radius: 12px 12px 12px 12px;">Submit</button>
           </form>
     </div>
     
 </body>
+
+<script>
+   $('.dropdown-menu a').click(function(){
+    $('#selected').text($(this).text());
+  });
+</script>

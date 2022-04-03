@@ -236,20 +236,77 @@ div.sticky {
     display: inline-block;
     cursor: pointer;
     color: black;
-  } 
-  
-  
-  .vote.on {
-    color: #f48024
-  }
-  .vote2 {
-    display: inline-block;
-    cursor: pointer;
-    color: black;
-  } 
-  
-  
-  .vote2.on {
-    color: #f48024
-  }
+} 
 
+
+.vote.on {
+color: #f48024
+}
+.vote2 {
+display: inline-block;
+cursor: pointer;
+color: black;
+} 
+
+
+.vote2.on {
+color: #f48024
+}
+
+.card-design {
+    font-family: 'Cabin', sans-serif;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+#design a,
+#design a:visited {
+    text-decoration: none;
+    color: #000;
+}
+#design a:hover,
+#design a:visited:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-design:hover,
+.card-design:visited:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #000;
+}
+
+
+.checked {
+    color: orange;
+}
+
+.info {
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    margin: 25px auto 30px  auto;
+
+    width: 70%;
+    font-family: 'Cabin', sans-serif;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.chnge {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+
+#chnge-link a,
+#chnge-link a:visited {
+    text-decoration: none;
+    color: #000;
+}
+#chnge-link a:hover,
+#chnge-link a:visited:hover {
+    text-decoration: underline;
+    color: #000;
+}
