@@ -23,7 +23,6 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      opacity: 0.8;
       /*
     background-color: #556B2F; /* Used if the image is unavailable
     background-image: url(jumbotron.jpg);
@@ -33,19 +32,21 @@
     */
 }
 #about-container {
+    font-family: 'Cabin', sans-serif;
     position: relative;
     justify-content: center;
     max-width: 70%;
-    background-color: #F5F5F5;
+    background-color: #FAF9F6;
     border-radius: 20px 20px 20px 20px;
     padding: 20px;
 }
 #search-button {
-    background-color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    background-color: #FAF9F6;
     text-align: center;
     margin: 20px;
     color: #556B2F;
-    border-color: #FFFFFF;
+    border-color: #FAF9F6;
     border-radius: 12px 12px 12px 12px;
     position: relative;
 }

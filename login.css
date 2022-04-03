@@ -9,25 +9,29 @@
 }
 .flex-r {
   flex-direction: row;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 20px 10px;
 }
 
 .login-text {
-  background-color: #f6f6f6;
-  max-width: 400px;
+  font-family: 'Cabin', sans-serif;
+  background-color: #FAF9F6;
+  min-width: 400px;
   min-height: 500px;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 20px 20px 20px 20px;
+  padding: 20px;
+  margin: 25px;
 }
 
 .logo {
   margin-bottom: 20px;
 }
+
+
 .logo span,
 .logo span i {
   font-size: 25px;
@@ -35,11 +39,15 @@
 }
 
 .login-text h1 {
-  font-size: 25px;
+  font-family: 'Cabin', sans-serif;
+  font-weight:500;
+  font-size: 40px;
+  color: #556B2F;
 }
 .login-text p {
   font-size: 15px;
-  color: #000000b2;
+  color: #556B2F;
+
 }
 
 form {
@@ -53,12 +61,13 @@ form {
   width: 100%;
 }
 .label {
-  font-size: 15px;
-  color: black;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  color: #000;
   margin-bottom: 3px;
 }
 .input {
-  background-color: #f6f6f6;
+  background-color: #FAF9F6;
   padding: 0px 5px;
   border: 2px solid rgba(216, 216, 216, 1);
   border-radius: 10px;
@@ -70,7 +79,7 @@ input {
   border: none;
   outline: none;
   padding: 10px 5px;
-  background-color: #f6f6f6;
+  background-color: #FAF9F6;
   flex: 1;
 }
 .input i {
@@ -84,24 +93,23 @@ input {
   margin-left: 5px;
 }
 
-.btn {
-  color: #ffffff;
-  border-radius: 30px;
-  padding: 10px 15px;
-  background: linear-gradient(122.33deg, #fefffd 30.62%, #c0d6ce 100%);
-  margin-top: 30px;
-  margin-bottom: 10px;
-  border-radius: 2px;
-  font-size: 16px;
-  transition: all 0.3s linear;
-}
-.btn:hover{
-    color: #556B2F;
-    background-color: #556B2F;
+#btn-account {
+  font-family: 'Cabin', sans-serif;
+  color: #556B2F;
+  font-size: 18px;
+  transition: all 0.1s linear;
+  font-family: 'Cabin', sans-serif;
+  background-color: #FAF9F6;
+  text-align: center;
+  margin-top: 20px;
+  border-color: #556B2F;
+  border-radius: 12px 12px 12px 12px;
+  position: relative;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
+#btn-account:hover{
+  color: #FFFFFF;
+  background-color: #556B2F;
 }
 .extra-line {
   font-size: 15px;
